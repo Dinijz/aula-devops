@@ -1,0 +1,17 @@
+name: primeiro-workflow
+run-name: Meu Primeiro Workflow
+
+# on: [push]
+
+#event 
+on:
+    push:
+        branches:
+            - main
+
+jobs:
+    maisdificil:
+        runs-on: macos-latest
+        steps:
+            - name: Rodar um hello no mac
+              run:
