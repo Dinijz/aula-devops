@@ -10,8 +10,13 @@ on:
             - main
 
 jobs:
-    maisdificil:
+    mac:
         runs-on: macos-latest
         steps:
             - name: Rodar um hello no mac
-              run:
+              run: echo "Rodou no MAC"
+    linux:
+        runs-on: ubuntu-latest
+        steps:
+            - name: Rodar um hello no linux
+              run: echo "Rodou no Linux tambem"
